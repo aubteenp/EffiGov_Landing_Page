@@ -1,11 +1,17 @@
 "use client";
 import Image from "next/image";
-import { Phone, ArrowRightLeft, BarChart3 } from "lucide-react";
-import { RoughNotation } from "react-rough-notation";
+import { Phone, ArrowRightLeft, BarChart3 } from "lucide-react"; //for the icons
+import { RoughNotation } from "react-rough-notation"; //for the highlight
+import Head from "next/head"; //for the head tag
 
 export default function Home() {
 
   return (
+    <>
+    <Head>
+    <title>EffiGov - AI Call Agent for Public Safety</title>
+    </Head>
+
     <div className="min-h-screen bg-background text-foreground font-[family-name:var(--font-geist-sans)]">
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 px-4 sm:px-6 lg:px-8 py-4 bg-background/80 backdrop-blur-sm">
@@ -144,5 +150,6 @@ export default function Home() {
         }
       `}</style>
     </div>
+    </>
   );
 }
