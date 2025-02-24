@@ -93,7 +93,7 @@ export default function Home() {
               padding={2.5}
               animationDuration={3000}
             >
-              We'll let you focus on the 30%
+              We&apos;ll let you focus on the 30%
             </RoughNotation>
           </p>
         </div>
