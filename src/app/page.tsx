@@ -3,6 +3,14 @@ import Image from "next/image";
 import { Phone, ArrowRightLeft, BarChart3 } from "lucide-react"; //for the icons
 import { RoughNotation } from "react-rough-notation"; //for the highlight
 import Head from "next/head"; //for the head tag
+import { Geist } from 'next/font/google'; //for the font
+
+//define font parameters
+const geistSans = Geist({
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  subsets: ['latin'],
+  display: 'swap',
+});
 
 export default function Home() {
 
@@ -12,7 +20,7 @@ export default function Home() {
     <title>EffiGov - AI Call Agent for Public Safety</title>
     </Head>
 
-    <div className="min-h-screen bg-background text-foreground font-[family-name:var(--font-geist-sans)]">
+    <div className={`${geistSans.className} min-h-screen bg-background text-foreground`}>
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 px-4 sm:px-6 lg:px-8 py-4 bg-background/80 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
